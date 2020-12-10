@@ -1,0 +1,21 @@
+<form action="/add" method="POST">
+    <p>Título:
+        <input type="text" name="titulo">
+        <p>Conteúdo: </p>
+        <textarea name="conteudo"></textarea>
+        <button type="submit"> Cadastrar postagem</button>
+    </p>
+</form>
+
+{{!-- {{
+    Não precisamos criar o modelo HTML pois, no main.handlebars -> {{body}} já passamos o valor na criação
+do mesmo, e por isso não se faz necessário a criação de todo um corpo html.
+
+method="" é uma forma de como enviar os dados para o Backend
+Existem duas maneiras de salvar, GET e POST
+ -> GET = Ele envia os dados pela URL
+ -> POST = Ele não passa os dados pela URL
+    Uma das principais diferenças das rotas do tipo get/post é que na rota do tipo POST não podemos acessar ela
+    diretamente via URL.
+
+}} --}}
